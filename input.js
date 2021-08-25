@@ -1,5 +1,8 @@
 const handleUserInput = function (keyInput, connected) {
-  if (keyInput === "w") connected.write("Move: up");
+  if (keyInput === "w") {
+    connected.write("Move: up");
+    connected.write("Say: UP!");
+  }
   if (keyInput === "a") connected.write("Move: left");
   if (keyInput === "s") connected.write("Move: down");
   if (keyInput === "d") connected.write("Move: right");
