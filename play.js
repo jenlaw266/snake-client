@@ -1,4 +1,5 @@
-const client = require("./client");
+const connectFunc = require("./client");
+const setUpInput = require("./input");
 
 console.log("Connecting ...");
-client.connect();
+setUpInput(connectFunc());
